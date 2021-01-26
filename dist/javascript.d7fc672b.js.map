@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/javascript.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,OAAZ;AACAD,OAAO,CAACC,GAAR,CAAY,yBAAZ","file":"javascript.d7fc672b.js","sourceRoot":"..","sourcesContent":["console.log('안녕하세요');\r\nconsole.log('이곳은 scss로 만들어진 페이지 입니다.');"]}

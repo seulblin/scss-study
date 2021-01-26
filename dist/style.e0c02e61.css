@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*size*/
+/*color*/
+body {
+  background: #e2d9d6;
+}
+
+#header {
+  min-width: 1200px;
+  border-top: 3px solid #ff7c98;
+  border-bottom: 1px solid #3f291a;
+  /*member*/
+  /*menu-wrap*/
+}
+#header .heading {
+  min-width: 1200px;
+}
+#header .heading .head-menu-wrap {
+  height: 45px;
+  width: 1200px;
+  margin: 0 auto;
+}
+#header .head-main {
+  height: 145px;
+  border-bottom: 1px solid #e2d9d6;
+}
+#header .head-menu {
+  background: #fff;
+}
+#header .head-menu .member {
+  float: left;
+  height: 100%;
+}
+#header .head-menu .member .members {
+  float: left;
+  margin: 0 3px;
+  line-height: 45px;
+}
+#header .head-menu .member .members a {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#header .head-menu .member .members .login {
+  color: #ff7c98;
+}
+#header .menu-group {
+  float: right;
+}
+#header .menu-group .menu-wrap .menu-choice {
+  float: left;
+  position: relative;
+  z-index: 51;
+}
+#header .menu-group .menu-wrap .menu-choice .choice-main {
+  line-height: 45px;
+}
+#header .menu-group .menu-wrap .menu-choice .choice-main a {
+  padding: 0 59px;
+  display: block;
+  color: #333;
+  text-transform: uppercase;
+}
+#header .menu-group .menu-wrap .menu-choice .choice-main a.choice-padding {
+  padding-left: 0 !important;
+}
+#header .menu-group .menu-wrap .choice-sub {
+  padding-top: 2px;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 14px;
+  width: 100%;
+}
+#header .menu-group .menu-wrap .choice-sub .choice-sub-menu {
+  padding-bottom: 12px;
+  text-align: center;
+}
+#header .menu-group .menu-wrap .choice-sub .choice-sub-menu:first-child {
+  padding-top: 40px;
+}
+#header .menu-group .menu-wrap .choice-sub .choice-sub-menu a {
+  display: block;
+  padding: 5px 0;
+  color: #333;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+#header .menu-group .menu-wrap .choice-sub .choice-sub-menu img {
+  transform: translateX(-35px);
+}
+#header .menu-bg {
+  overflow: hidden;
+  position: absolute;
+  top: 195px;
+  left: 0;
+  height: 275px;
+  z-index: 50;
+  min-width: 100%;
+  border-bottom: 1px solid #3f291a;
+  background: #fff;
+}
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */

@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding:0;
+}
+ul,li{ list-style: none;}
+a{ text-decoration: none;}
+
+/*size*/
+$minWidth:1200px;
+$width:1200px;
+
+/*color*/
+$nomal: #333;
+$pink: #ff7c98;
+$dark: #3f291a;
+$white: #e2d9d6;
+
+body{
+  background:$white;
+}
+
+#header{
+  min-width: $minWidth;
+  border-top: 3px solid $pink;
+  border-bottom:1px solid $dark;
+  .heading{
+    min-width: $minWidth;
+    .head-menu-wrap{
+      height: 45px;
+      width:$width; margin:0 auto;
+    }
+  }
+  .head-main{
+    height: 145px; 
+    border-bottom: 1px solid $white;
+  }
+  .head-menu{  
+    background:#fff;  
+      .member{
+        float:left;
+        height:100%;
+        .members{
+          float: left;
+          margin:0 3px;
+          line-height: 45px;
+          a{
+            color:$nomal;
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+          .login{
+            color: $pink;
+          }
+        }
+      }
+    } /*member*/ 
+    .menu-group{
+      float:right;
+      .menu-wrap{
+        .menu-choice{
+          float:left;
+          position: relative;
+          z-index: 51;
+          .choice-main{
+            line-height: 45px;
+            a{
+              padding:0 59px;
+              display: block;
+              color: $nomal;
+              text-transform: uppercase;
+            }
+            a.choice-padding{
+              padding-left: 0 !important;
+            }
+          }
+        }
+        .choice-sub{
+          padding-top: 2px;
+          opacity: 1;
+          -webkit-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;  
+          overflow: hidden;
+          position: absolute;
+          top: 100%;
+          left:0;
+          font-size: 14px;
+          width: 100%;
+          .choice-sub-menu{
+            padding-bottom: 12px;
+            text-align: center;
+            &:first-child{
+              padding-top: 40px; 
+            }
+            a{
+            display:block;
+            padding:5px 0;
+            color: $nomal;
+            line-height: 1.2;
+            text-transform: uppercase;
+            }
+            img{
+              transform: translateX(-35px);
+            }
+          }
+        }
+      }
+    }/*menu-wrap*/
+    .menu-bg{
+      overflow: hidden;
+      position: absolute;
+      top: 195px;
+      left:0;
+      height: 275px;
+      z-index: 50;
+      min-width: 100%;
+      border-bottom:1px solid $dark;
+      background: #fff;
+    }
+}
+
