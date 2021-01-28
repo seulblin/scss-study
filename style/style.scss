@@ -69,6 +69,14 @@ body{
       #etc{
         @include position;
         right:0;
+        li{
+          float:left;
+          padding-left: 20px;
+          font-size: 11px;
+          a{
+           color: $nomal;
+          }
+        }
       }
     }
   }
