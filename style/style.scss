@@ -15,6 +15,9 @@ $pink: #ff7c98;
 $dark: #3f291a;
 $white: #e2d9d6;
 
+/*url <url은 배스킨라빈스를 참조하였습니다.>*/
+$url: 'https://www.baskinrobbins.co.kr';
+
 body{
   background:$white;
 }
@@ -23,6 +26,7 @@ body{
   min-width: $minWidth;
   border-top: 3px solid $pink;
   border-bottom:1px solid $dark;
+  background: url($url + '/assets/images/common/bg_header.gif)');
   .heading{
     min-width: $minWidth;
     .head-menu-wrap{
@@ -33,6 +37,40 @@ body{
   .head-main{
     height: 145px; 
     border-bottom: 1px solid $white;
+    .head-main-wrap{
+      width: $width;
+      position: relative;
+      height: 145px;
+      padding-top: 20px;
+      margin: 0 auto;
+      #logo{
+        width:92px;
+        height: 92px;
+        margin:0 auto;
+        a{
+          display:block;
+          width:100%; height: 100%;
+          background: url($url + '/assets/images/common/logo_baskinrobbins.png');
+        }
+      }
+      @mixin position {
+        position: absolute;
+        top: 50px;
+        @content;
+      }
+      #sns{
+        @include position;
+        left: 0;
+        li{
+          float:left;
+          padding-right:10px;
+        }
+      }
+      #etc{
+        @include position;
+        right:0;
+      }
+    }
   }
   .head-menu{  
     background:#fff;  
@@ -76,7 +114,7 @@ body{
         }
         .choice-sub{
           padding-top: 2px;
-          opacity: 1;
+          opacity: 0;
           -webkit-transition: opacity 0.5s ease;
           transition: opacity 0.5s ease;  
           overflow: hidden;
@@ -104,17 +142,26 @@ body{
           }
         }
       }
+      .choice-sub.opacity{
+        opacity: 1;
+      }
     }/*menu-wrap*/
     .menu-bg{
       overflow: hidden;
       position: absolute;
-      top: 195px;
+      top: -81px;
+      -webkit-transition: 0.3s ease;
+       transition: 0.3s ease;
       left:0;
       height: 275px;
       z-index: 50;
       min-width: 100%;
       border-bottom:1px solid $dark;
       background: #fff;
+      z-index: -1;
+    }
+    .menu-bg.openTop{
+      top: 195px;
     }
 }
 

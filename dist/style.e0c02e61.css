@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ a {
 
 /*size*/
 /*color*/
+/*url <url은 배스킨라빈스를 참조하였습니다.>*/
 body {
   background: #e2d9d6;
 }
@@ -21,6 +23,7 @@ body {
   min-width: 1200px;
   border-top: 3px solid #ff7c98;
   border-bottom: 1px solid #3f291a;
+  background: url("https://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif)");
   /*member*/
   /*menu-wrap*/
 }
@@ -35,6 +38,38 @@ body {
 #header .head-main {
   height: 145px;
   border-bottom: 1px solid #e2d9d6;
+}
+#header .head-main .head-main-wrap {
+  width: 1200px;
+  position: relative;
+  height: 145px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+#header .head-main .head-main-wrap #logo {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto;
+}
+#header .head-main .head-main-wrap #logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.baskinrobbins.co.kr/assets/images/common/logo_baskinrobbins.png");
+}
+#header .head-main .head-main-wrap #sns {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+#header .head-main .head-main-wrap #sns li {
+  float: left;
+  padding-right: 10px;
+}
+#header .head-main .head-main-wrap #etc {
+  position: absolute;
+  top: 50px;
+  right: 0;
 }
 #header .head-menu {
   background: #fff;
@@ -78,7 +113,7 @@ body {
 }
 #header .menu-group .menu-wrap .choice-sub {
   padding-top: 2px;
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   overflow: hidden;
@@ -105,16 +140,25 @@ body {
 #header .menu-group .menu-wrap .choice-sub .choice-sub-menu img {
   transform: translateX(-35px);
 }
+#header .menu-group .choice-sub.opacity {
+  opacity: 1;
+}
 #header .menu-bg {
   overflow: hidden;
   position: absolute;
-  top: 195px;
+  top: -81px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   left: 0;
   height: 275px;
   z-index: 50;
   min-width: 100%;
   border-bottom: 1px solid #3f291a;
   background: #fff;
+  z-index: -1;
+}
+#header .menu-bg.openTop {
+  top: 195px;
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
